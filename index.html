@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- <head> different to <header> -->
+    <!-- Everything about the page, not printed -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Screen area of the device being used (In this case, it's using the whole page)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Travel App">
+    <meta name="a">
+    <!-- The title placed in the tab -->
+    <title>My Travel App</title>
+
+    <style>
+
+        
+        /* can target by element, ids, classes*/
+        /* Classes: can be used ANYWHERE */
+
+        body { 
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+        }
+
+        #wrapper { 
+            margin: 0 50px;
+
+        }
+        h1 { 
+            margin-top: 0;
+        }
+
+        img { 
+            width: 100%;
+        }
+
+        .red { /* full stop shows it is trying to target a class by name "red" */
+            color: red;
+            font-family: sans-serif;
+        }
+
+        .italic { 
+            font-style: italic;
+        }
+
+        #blue { 
+            color: blue;
+            font-weight: 100;
+        }
+
+        #test-section .red { 
+            font-weight: normal;
+        }
+
+        /* Navbar section */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
+
+        article { 
+            display: flex;
+        }
+        
+    </style>
+
+</head>
+<body> <!-- Stuff to print onto the webpage -->
+    <div id="wrapper">
+
+        <header> <!-- doesn't do much functionality except readability -->
+            <nav>
+                <ul>
+                    <li><h1>My Travel App</h1></li>
+                    <li><a href="#italy">Italy</a></li>
+                    <li><a href="#spain">Spain</a></li>
+                    <li><a href="#portugal">Portugal</a></li>
+                    <li><a href="#france">France</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main> <!-- Still doesn't do a great deal except provide structure -->
+            <h1>Top Destinations</h1>     
+            <section id="test-section"> <!-- A column or an overarching tag for content -->
+                <article> <!-- Step down from the section, the little components      inside the section -->
+                    <img src="https://traveleering.com/wp-content/uploads/2015/10/Venice-Italy.jpg" alt="Grand Canal in Venice">
+                    <div>
+                        <h2 id="italy">Grand Canal in Venice</h2>
+                    </div>
+                    <div>
+                        <p class="red">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat est placeat sed 
+                            culpa ea quis ipsam ipsa, obcaecati perspiciatis ut atque neque at tempore quia laborum
+                            earum labore nihil doloremque. Porro laudantium distinctio reprehenderit provident veritatis 
+                            doloremque dolorem sapiente nemo vitae, optio aliquam quaerat. Corrupti quia illo exercitationem ipsa vero.
+                        </p>
+                    </div>
+                </article>
+                
+                <article>
+                    <img src="https://cdn.budgetyourtrip.com/images/photos/headerphotos/large/spain_catalonia.jpg" alt="Spain">
+                    <div>
+                        <h2 id="spain">Spain</h2>
+                    </div>
+                    <div>
+                        <p class="red italic"> <!-- Can assign multiple classes by putting a space in between the two classes -->
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero praesentium fuga facilis quasi alias, 
+                            ipsam officiis labore, quidem accusantium asperiores provident perspiciatis necessitatibus nobis, at sapiente 
+                            repellendus doloribus! Dolorum magnam quod modi? Unde, fuga dignissimos quibusdam, enim veniam corporis odit omnis 
+                            iste hic numquam quam. Corrupti minus amet fugiat. Harum.
+                        </p>
+                    </div>
+                </article>
+                
+                <article>
+                    <img src="http://media.architecturaldigest.com/photos/57c738cc4b3d33ab5ee28054/master/pass/castles-portugal-01.jpg" alt="Portgual">
+                    <div>   
+                        <h2 id="portugal">Portgual</h2>
+                    </div>
+                    <div>
+                        <p id="blue">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio ipsum beatae provident optio porro voluptas? 
+                            Dignissimos ipsam quisquam, at, cupiditate, vitae ullam ratione quo neque quis autem debitis laborum quod sunt officia nostrum 
+                            eos molestiae consequatur minima maiores. Modi aut quos voluptatum error praesentium laborum ad ipsum deserunt unde.
+                        </p>
+                    </div>
+                </article>
+                
+                <article>
+                    <img src="http://3.bp.blogspot.com/-WNmNZY1FatU/UQgM7V3yOaI/AAAAAAAAjiY/XQQrJVRf3l8/s1600/Paris,France.jpg" alt="Eifel Tower in France">
+                    <div>
+                        <h2 id="france">France</h2>
+                    </div>
+                    <div>
+                        <p class="red">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, ratione aut facere distinctio autem esse nam iste at suscipit ducimus 
+                            sunt quisquam assumenda reiciendis a mollitia velit? Natus doloremque optio iure aliquam recusandae? Sequi illum nobis reiciendis, quo 
+                            ut et deleniti reprehenderit quibusdam, eius laborum repudiandae est qui. Commodi, in!
+                        </p>  
+                    </div>
+                </article>
+
+            </section>  
+
+        </main>
+
+        <footer>
+            <p>Copyright © Aidan Lockwood</p>
+        </footer>
+
+    </div>
+</body>
+</html>
