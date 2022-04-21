@@ -33,7 +33,7 @@
         }
 
         img { 
-            width: 100%;
+            width: 100%;        
         }
 
         .red { /* full stop shows it is trying to target a class by name "red" */
@@ -48,10 +48,6 @@
         #blue { 
             color: blue;
             font-weight: 100;
-        }
-
-        #test-section .red { 
-            font-weight: normal;
         }
 
         /* Navbar section */
@@ -80,9 +76,10 @@
             background-color: #111;
         }
 
-        article { 
+        .flex-container { 
             display: flex;
         }
+
         
     </style>
 
@@ -103,7 +100,7 @@
         </header>
         <main> <!-- Still doesn't do a great deal except provide structure -->
             <h1>Top Destinations</h1>     
-            <section id="test-section"> <!-- A column or an overarching tag for content -->
+            <section class="flex-container"> <!-- A column or an overarching tag for content -->
                 <article> <!-- Step down from the section, the little components      inside the section -->
                     <img src="https://traveleering.com/wp-content/uploads/2015/10/Venice-Italy.jpg" alt="Grand Canal in Venice">
                     <div>
